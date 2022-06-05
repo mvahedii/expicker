@@ -66,7 +66,7 @@ export class Column extends Component<ColumnProps, ColumnState> {
     this.props.onChange(this.props.name, newValue)
   }
 
-  handleTouchStart = (event:any) => {
+  handleTouchStart = (event: any) => {
     const startTouchY = event.targetTouches[0].pageY
     this.setState(({ scrollerTranslate }) => ({
       startTouchY,
@@ -147,7 +147,7 @@ export class Column extends Component<ColumnProps, ColumnState> {
     if (!this.state.isMoving) {
       return
     }
-    this.setState((startScrollerTranslate as number) => ({
+    this.setState((startScrollerTranslate: any) => ({
       isMoving: false,
       startTouchY: 0,
       startScrollerTranslate: 0,
