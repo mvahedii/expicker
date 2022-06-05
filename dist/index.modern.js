@@ -1,10 +1,9 @@
 import { createElement } from 'react';
 
-var styles = {"test":"_styles-module__test__3ybTi"};
+var styles = {"test":"_3ybTi"};
 
-const ExampleComponent = ({
-  text
-}) => {
+var ExampleComponent = function ExampleComponent(_ref) {
+  var text = _ref.text;
   return createElement("div", {
     className: styles.test
   }, "Example Component: ", text);
